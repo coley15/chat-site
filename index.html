@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 font-bold flex justify-center items-center min-h-screen">
+  <div class="flex flex-col bg-gray-800 rounded-lg shadow-lg w-full max-w-md h-[700px] p-4">
+    <h1 class="text-blue-200 text-4xl mb-6 text-center">Chat Website</h1>
+
+    <!-- Chat messages area -->
+    <div class="flex-1 bg-gray-700 rounded p-4 overflow-y-auto mb-4 text-white" id="message-container">
+
+    </div>
+
+    <!-- Input area -->
+    <form class="flex w-full max-w-2xl">
+
+    <input
+        type="text"
+        placeholder="Username"
+        class="w-36 bg-gray-600 text-white focus:outline-none p-4"
+        id="username-area"
+      />
+      <input
+        type="text"
+        placeholder="Type your message..."
+        class="w-40 flex-grow bg-gray-600 text-white p-3 focus:outline-none"
+        id="text-input"
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white rounded-r px-6"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
